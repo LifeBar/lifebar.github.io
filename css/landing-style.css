@@ -69,7 +69,7 @@ p {
     background:linear-gradient(
       rgba(0, 0, 0, 0.75), 
       rgba(0, 0, 0, 0.75)
-    ), url("../images/playStation-vr-hardware.jpg") center;
+    ), url("../images/playstation-vr-hardware.jpg") center;
     background-size: cover;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, .7);*/
 
