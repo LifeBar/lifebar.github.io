@@ -11,7 +11,12 @@ nav .brand-logo {
   color: #444;
 }
 
-
+html {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.87);
+}
 
 p {
   line-height: 2rem;
@@ -25,32 +30,6 @@ p {
 .button-collapse {
   color: #26a69a;
 }
-
-.preloadimage{
-  position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-
-#leftHalf {
-   background: url("../images/Spacewar.jpg") center;
-   width: 100%;
-   position: absolute;
-   top: 0px;
-   height: 50%;
-}
-#rightHalf {
-   background: url("../images/PlayStation-VR.jpg") center;
-   width: 100%;
-   position: absolute;
-   bottom: 0px;
-   height: 50%;
-}
-
 
 
 .landing-box { 
@@ -76,14 +55,6 @@ p {
     /*right:-10%;*/
 }
 
-.PSVRBlue {
-    position: absolute;  /* remove from flow so sunset is placed on top */
-
-    background:  rgba(0, 0, 0, 0.5) url("../images/PSVRBlue.png") center;
-    background-size: cover;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, .7);*/
-    right:-10%;
-}
 
 .landing-slider {
     /* set initial width */
@@ -128,43 +99,6 @@ p {
 
 
 
-.parallax-container {
-  min-height: 880px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
 
 .landing-lifebar-container{
   position: fixed;
@@ -202,13 +136,6 @@ footer.page-footer {
     color:white;
 }
 
-/*.input-field .prefix.active{
-    color: #2196F3;
-}
-
-.input-field .active{
-    color: #2196F3;
-}*/
 
 .landing-email i{
     color:white;
@@ -228,17 +155,6 @@ footer.page-footer {
   bottom: 10px;
   color:rgba(255,255,255,.5);
     right: 10px;
-}
-
-.landing-lifebar-container.smaller{
-  width: 75px;
-  top: 2%;
-  left:1%;
-}
-
-.landing-lifebar-container.monitorMove{
-  top: 140px;
-  left: 36%;
 }
 
 .landing-lifebar-half-circle {
@@ -497,184 +413,3 @@ footer.page-footer {
   font-weight: 300;
 }
 
-/*-----------ScrollMagic--------------*/
-
-section {
-  height: 600px;
-  position: relative;
-  text-align: center;
-}
-/* Center aligned first section */
-section .inner {
-  margin: 0 auto;
-  max-width: 85%;
-}
-
-/* Content of the following sections aligned next to the monitor */
-section .innerText {
-  position: absolute;
-  top: 250px;
-  left: 60%;
-  transform: translate(-100px, -50%);
-  text-align: left;
-  /*z-index: -1;*/
-}
-
-
-.landing-xp-text{
-  top: -140px;
-  left: 100px;
-  position: relative;
-  font-size: 24px;
-  width:120px;
-}
-
-.landing-sign-up{
-  position: fixed;
-  /* center the element */
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    /* give it dimensions */
-    /*min-height: 10em;*/
-    width: 20%;
-    min-width:200px;
-}
-
-/* monitor/Card positioned to the left - this is a default position */
-.landing-monitor {
-  width: 636px;
-  height: 345px;
-  border-radius: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-150%, -50%);
-  background-color: #999;
-  background-image: url("../images/fallout4.gif");
-  /*opacity: 0;*/
-  z-index: 0;
-}
-
-.landing-manBack, .landing-controller, .landing-manFront{
-  position: fixed;
-  top: 50%;
-  left: 10%;
-  display: inline;
-  opacity: 0;
-  z-index: 0;
-}
-
-.landing-gameGif, .landingGraphs {
-  position: fixed;
-  top: 50%;
-  left: 10%;
-  display: inline;
-  opacity: 0;
-  z-index: 4;
-}
-
-/*.landingActivity, .landingNotifications{
-  z-index:4;
-}*/
-
-.landing-macbook{
-  position: fixed;
-  top: 50%;
-  left: 10%;
-  display: inline;
-  opacity: 0;
-  z-index:2;
-}
-
-.landingGraphs{
-  z-index: 12;
-}
-
-.landing-manFront{
-  z-index: 100;
-}
-
-.landing-manAvatar{
-  opacity:0;
-}
-
-
-
-.landingActivity img, .landingNotifications img{
-  position: relative;
-    left: 10%;
-    height: 400px;
-    z-index: 100;
-}
-
-.landingMask
-{
-  position: fixed;
-  top: 50%;
-  left: 9%;
-  /*background-color: #D8D8D8;*/
-  height: 300px;
-  width: 500px;
-  /*opacity:0;*/
-  overflow: hidden;
-  z-index:3;
-}
-
-
-
-/* Bullet list */
-.landing-features {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.6);
-}
-.landing-features li {
-  position: relative;
-  padding-left: 17px;
-  font-size: 18px;
-}
-
-/* A heart instead of a bullet */
-.landing-features li:before {
-  /*content: '❤';*/
-  content: url("../images/Coin.png");
-  font-size: 11px;
-  position: absolute;
-  left: 0;
-  top: 8px;
-  display: block;
-  color: #ff466a;
-}
-
-/* FOOTER */
-#landing-sign-up {
-	background: #D32F2F;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: white;
-}
-
-#landing-sign-up p {
-	color: white;
-}
-
-#landing-sign-up h4 {
-	font-weight: 400;
-	text-align: center;
-	font-size: 24px;
-}
-
-/* CREDIT */
-#landing-c {
-	background: black;
-	padding: 20px;
-}
-
-#landing-c p {
-	color: white;
-	font-size: 13px;
-}
